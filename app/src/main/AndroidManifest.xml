@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sevenander.debta.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Permissions required by the sync adapter -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.DispatchActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppNoActionBarTheme" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:logo="@mipmap/ic_launcher" />
+        <activity android:name=".activities.DGroupEditActivity" />
+        <activity
+            android:name=".activities.UserListActivity"
+            android:label="@string/title_activity_dgroup"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sevenander.debta.app.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DCheckListActivity"
+            android:label="@string/title_activity_cheque" />
+        <activity
+            android:name=".activities.DCheckEditActivity"
+            android:parentActivityName=".activities.DCheckListActivity" />
+        <activity
+            android:name=".activities.DCheckPreviewActivity"
+            android:label="@string/title_activity_cheque_preivew"
+            android:parentActivityName=".activities.DCheckListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DCheckListActivity" />
+        </activity>
+
+        <provider
+            android:name=".data.DebtaProvider"
+            android:authorities="com.sevenander.debta.app"
+            android:exported="false" />
+
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name=".sync.DebtaAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The SyncAdapter service -->
+        <service
+            android:name=".sync.DebtaSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sevenander.debta.app.activities.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

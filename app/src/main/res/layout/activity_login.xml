@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top_logo"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:text="@string/app_name"
+            android:textSize="48dp"
+            android:textStyle="italic"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/ll_top_logo">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="text"
+            android:hint="@string/input_dialog_username_hint"
+            android:textColor="@color/darkGrey"
+            android:text="User123"
+            android:id="@+id/et_username">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword"
+            android:password="true"
+            android:textColor="@color/darkGrey"
+            android:text="admin"
+            android:id="@+id/et_password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_green"
+            android:text="@string/button_auth"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:id="@+id/b_login" />
+
+    </LinearLayout>
+
+</RelativeLayout>

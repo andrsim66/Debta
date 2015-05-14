@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Debta</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add">Add</string>
+    <string name="action_set_date">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Logging you in &#8230;</string>
+    <string name="progress_signup">Signing you up &#8230;</string>
+    <string name="progress_loading">Loading &#8230;</string>
+    <string name="network_not_available">Network is not available</string>
+    <string name="title_activity_dgroup">DGroupActivity</string>
+    <string name="title_activity_cheque">ChequeActivity</string>
+    <string name="title_activity_edit_cheque">EditChequeActivity</string>
+    <string name="title_activity_cheque_preivew">ChequePreivewActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="input_dialog_username_hint">Username</string>
+    <string name="input_dialog_group_hint">Group name</string>
+    <string name="input_password_hint">Password</string>
+    <string name="button_auth">Authenticate</string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">debta.sevenander.com</string>
+    <string name="content_authority">com.sevenander.debta.app</string>
+
+    <string name="dcheck_list_activity_title">\'s debts</string>
+    <string name="dcheck_list_activity_title_my">My debts</string>
+
+    <string name="dcheck_edit_activity_title">New check</string>
+
+    <string name="date_picker_dialog_title">Choose Date</string>
+    <string name="dcheck_item_set_date">Set date</string>
+    <string name="dcheck_item_name_input_dialog_title">Input item name</string>
+    <string name="dcheck_item_name_input_dialog_hint">Milk, bread etc.</string>
+    <string name="dcheck_item_price_input_dialog_title">Input item price</string>
+    <string name="dcheck_item_price_input_dialog_error">Wrong input</string>
+    <string name="dcheck_item_multichoise_dialog_title">Select debtors</string>
+    <string name="dcheck_item_multichoise_dialog_ok_button">Choose</string>
+    <string name="dcheck_item_multichoise_dialog_error">
+        Can\'t include just you. Select more debtors</string>
+
+    <string name="settings_name_input_dialog_title">Edit name</string>
+    <string name="settings_first_name_input_dialog_hint">First name</string>
+    <string name="settings_last_name_input_dialog_hint">Last name</string>
+    <string name="settings_username_input_dialog_title">Edit username</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_logout">Log out</string>
+
+    <string name="tab1_title">MY DEBTS</string>
+    <string name="tab2_title">MY DEBTORS</string>
+
+    <string name="parse_application_id">2pmagJ0Wq1qGCzRB6ISL9bG6ph2t2yisE7L92i2e</string>
+    <string name="parse_client_id">EfFtWHNKwaPKMFPq56hiwZYElxcaCjxuuo6jfC67</string>
+
+    <string name="dgroup_edit_activity_title_edit">Edit Group</string>
+    <string name="dgroup_edit_activity_title_new">New Group</string>
+    <string name="dgroup_edit_button_skip">SKIP</string>
+    <string name="dgroup_edit_button_create">CREATE</string>
+    <string name="dgroup_edit_button_save">SAVE</string>
+    <string name="dgroup_edit_search_hint">Enter user\'s name</string>
+    <string name="dgroup_edit_name_input_dialog_title">Input group name</string>
+
+    <string name="total_label">Total:</string>
+    <string name="slash_divider">/</string>
+
+</resources>

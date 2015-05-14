@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rl_list_container">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/lv_search_result" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:id="@+id/pb_search_progress" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_list_container">
+
+        <com.wefika.flowlayout.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/ll_container" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:text="@string/dgroup_edit_button_skip"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:background="@drawable/button_white"
+        android:layout_toLeftOf="@+id/b_add_group"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:id="@+id/b_add_group_skip" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:text="@string/dgroup_edit_button_create"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:background="@drawable/button_white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"
+        android:id="@+id/b_add_group" />
+
+    <include layout="@layout/toolbar_shadow" />
+
+</RelativeLayout>
