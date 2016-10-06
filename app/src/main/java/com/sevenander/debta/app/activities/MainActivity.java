@@ -74,9 +74,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void setupViews() {
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP)
             mViewShadow.setVisibility(View.GONE);
-        }
+
         mAdapter = new DGroupPagerAdapter(getSupportFragmentManager(), MainActivity.this);
         mPagerDGroup.setAdapter(mAdapter);
         mPagerDGroup.setPageMargin((int) getResources().getDimension(R.dimen.page_margin));
