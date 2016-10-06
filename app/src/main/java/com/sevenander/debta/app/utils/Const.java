@@ -23,11 +23,13 @@ public class Const {
     public static final String KEY_TAB_POS = "tabPos";
     public static final String KEY_STRING_URI = "stringUri";
 
+    //Vanya pidar
     public static final int COL_DGROUP_OBJ_ID = 1;
     public static final int COL_DGROUP_NAME = 2;
     public static final int COL_DGROUP_ADMIN_ID = 3;
     public static final int COL_DGROUP_MEMBERS = 4;
 
+    //Pizdu Vanyu
     public static final int COL_DCHECK_OBJ_ID = 1;
     public static final int COL_DCHECK_GROUP_ID = 2;
     public static final int COL_DCHECK_DATE = 3;
