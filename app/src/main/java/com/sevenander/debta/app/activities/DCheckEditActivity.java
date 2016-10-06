@@ -416,6 +416,7 @@ public class DCheckEditActivity extends ActionBarActivity implements View.OnClic
     }
 
     private double calcTotalDebt(List<DCheckItem> DCheckItems) {
+
         double sum = 0;
         int size1 = DCheckItems.size();
         for (int i = 0; i < size1; i++) {

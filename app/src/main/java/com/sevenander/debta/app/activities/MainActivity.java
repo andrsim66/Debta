@@ -36,8 +36,8 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
-        boolean clear = intent.getBooleanExtra(Const.KEY_ACTION_CLEAR, false);
-        if (clear) clearNotification(DebtaSyncAdapter.NOTIFICATION_ID);
+        boolean isClear = intent.getBooleanExtra(Const.KEY_ACTION_CLEAR, false);
+        if (isClear) clearNotification(DebtaSyncAdapter.NOTIFICATION_ID);
 
         setupToolbar();
         initViews();
