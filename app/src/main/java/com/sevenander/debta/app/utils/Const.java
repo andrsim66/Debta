@@ -4,6 +4,7 @@ package com.sevenander.debta.app.utils;
  * Created by andrii on 06.03.15.
  */
 public class Const {
+    // Pizdu vanyu!
     public static final int FIRST_CALL = 1;
     public static final int OTHER_CALL = 2;
     public static final String KEY_CALL_EXTRA = "callNum";

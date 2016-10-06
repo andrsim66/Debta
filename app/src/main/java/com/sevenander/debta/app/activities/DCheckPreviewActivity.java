@@ -121,6 +121,7 @@ public class DCheckPreviewActivity extends ActionBarActivity implements View.OnC
         }
     }
 
+
     private void setupViews() {
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
             mViewShadow.setVisibility(View.GONE);
